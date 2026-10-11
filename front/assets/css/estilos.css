@@ -372,3 +372,305 @@ a {
     }
 
 }
+
+/* PAGINAS INTERNAS */
+
+.cabecera-pagina {
+    padding: 60px 0 45px;
+    background: linear-gradient(120deg, #f1faf7, #ffffff);
+}
+
+.cabecera-pagina h1 {
+    margin: 8px 0;
+    color: var(--azul);
+    font-size: clamp(2.2rem, 4vw, 3.4rem);
+    font-weight: 800;
+}
+
+.cabecera-pagina p {
+    margin: 0;
+    color: var(--gris);
+    font-size: 1.05rem;
+}
+
+
+/* CATALOGO */
+
+.catalogo {
+    padding: 45px 0 85px;
+}
+
+.categorias-principales {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 28px;
+}
+
+.categorias-principales a {
+    padding: 8px 15px;
+    background: var(--verde-claro);
+    color: var(--verde);
+    border-radius: 20px;
+    font-size: .9rem;
+    font-weight: 700;
+}
+
+.filtros {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    align-items: end;
+    margin-bottom: 40px;
+    padding: 22px;
+    background: var(--gris-claro);
+    border-radius: 14px;
+}
+
+.filtros label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: .85rem;
+    font-weight: 700;
+}
+
+.filtros select,
+.filtros input {
+    width: 100%;
+    min-height: 42px;
+    padding: 8px 10px;
+    border: 1px solid var(--borde);
+    border-radius: 7px;
+    background: var(--blanco);
+}
+
+.filtro-check {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.filtro-check input {
+    width: auto;
+    min-height: auto;
+}
+
+.filtro-check label {
+    margin: 0;
+}
+
+.producto-categoria {
+    color: var(--gris);
+    font-size: .85rem;
+}
+
+.sin-resultados {
+    padding: 60px 20px;
+    text-align: center;
+    background: var(--gris-claro);
+    border-radius: 14px;
+}
+
+
+/* DETALLE */
+
+.detalle-producto {
+    padding: 60px 0 70px;
+}
+
+.volver {
+    display: inline-block;
+    margin-bottom: 30px;
+    color: var(--verde);
+    font-weight: 700;
+}
+
+.detalle-imagen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 440px;
+    background: var(--gris-claro);
+    border-radius: 20px;
+    color: #9aa5aa;
+}
+
+.detalle-producto h1 {
+    margin: 10px 0;
+    color: var(--azul);
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 800;
+}
+
+.detalle-ranking {
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+
+.detalle-precio {
+    margin: 15px 0;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.detalle-descripcion {
+    max-width: 550px;
+    color: var(--gris);
+    line-height: 1.7;
+}
+
+.detalle-info {
+    margin-top: 25px;
+    padding: 15px;
+    background: var(--verde-claro);
+    border-radius: 8px;
+}
+
+.detalle-info span {
+    color: var(--verde);
+}
+
+.comentarios {
+    padding: 65px 0;
+    background: var(--gris-claro);
+}
+
+.comentarios h2 {
+    margin: 5px 0 25px;
+    color: var(--azul);
+    font-weight: 800;
+}
+
+.comentario {
+    margin-bottom: 15px;
+    padding: 20px;
+    background: var(--blanco);
+    border-radius: 10px;
+}
+
+.comentario p {
+    margin: 8px 0 0;
+    color: var(--gris);
+}
+
+
+/* FORMULARIOS */
+
+.formulario-card {
+    padding: 32px;
+    background: var(--blanco);
+    border: 1px solid var(--borde);
+    border-radius: 16px;
+    box-shadow: 0 12px 35px rgba(30, 65, 58, .07);
+}
+
+.formulario-card h2 {
+    margin-bottom: 25px;
+    color: var(--azul);
+    font-weight: 800;
+}
+
+.form-label {
+    font-weight: 700;
+}
+
+.form-control,
+.form-select {
+    min-height: 45px;
+}
+
+textarea.form-control {
+    min-height: auto;
+}
+
+
+/* CONTACTO */
+
+.seccion-contacto {
+    padding: 65px 0 90px;
+}
+
+.contacto-info h2 {
+    margin: 8px 0 15px;
+    color: var(--azul);
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.contacto-info > p {
+    color: var(--gris);
+    line-height: 1.7;
+}
+
+.dato-contacto {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+}
+
+.dato-contacto span {
+    color: var(--gris);
+}
+
+
+/* ERROR */
+
+.pagina-error {
+    display: flex;
+    align-items: center;
+    min-height: 70vh;
+    padding: 70px 0;
+    text-align: center;
+    background: linear-gradient(120deg, #f1faf7, #ffffff);
+}
+
+.error-contenido {
+    max-width: 650px;
+    margin: auto;
+}
+
+.error-numero {
+    display: block;
+    color: var(--menta);
+    font-size: clamp(6rem, 15vw, 11rem);
+    font-weight: 900;
+    line-height: .8;
+}
+
+.error-contenido h1 {
+    margin: 15px 0;
+    color: var(--azul);
+    font-weight: 800;
+}
+
+.error-contenido p {
+    margin-bottom: 28px;
+    color: var(--gris);
+}
+
+
+/* RESPONSIVE PAGINAS INTERNAS */
+
+@media (max-width: 991px) {
+
+    .filtros {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .detalle-imagen {
+        min-height: 330px;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    .filtros {
+        grid-template-columns: 1fr;
+    }
+
+    .formulario-card {
+        padding: 22px;
+    }
+
+}
