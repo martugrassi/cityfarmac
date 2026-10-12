@@ -75,7 +75,13 @@ require_once __DIR__ . '/../Config/config.php';
                 Ingresar
             </button>
 
-        </form>
+                    <a
+            href="<?= BASE_URL ?>_admin/"
+            class="btn btn-outline-secondary w-100 mt-2">
+            Acceder al panel de administrador
+        </a>
+
+                </form>
 
         <div class="auth-links">
 

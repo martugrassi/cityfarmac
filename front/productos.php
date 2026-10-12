@@ -5,15 +5,96 @@ require_once __DIR__ . '/../Config/config.php';
 $titulo = 'Productos | City Farmac';
 
 $productos = [
-    ['id' => 1, 'nombre' => 'Protector Solar Facial FPS 50', 'marca' => 'Dermaglós', 'categoria' => 'Dermocosmética', 'precio' => 18900, 'ranking' => 5, 'destacado' => true],
-    ['id' => 2, 'nombre' => 'Agua Micelar', 'marca' => 'Garnier', 'categoria' => 'Cuidado facial', 'precio' => 8500, 'ranking' => 4, 'destacado' => true],
-    ['id' => 3, 'nombre' => 'Crema Hidratante', 'marca' => 'CeraVe', 'categoria' => 'Dermocosmética', 'precio' => 21500, 'ranking' => 5, 'destacado' => true],
-    ['id' => 4, 'nombre' => 'Shampoo Reparación', 'marca' => 'Vichy', 'categoria' => 'Cuidado capilar', 'precio' => 16700, 'ranking' => 4, 'destacado' => true],
-    ['id' => 5, 'nombre' => 'Bálsamo Labial', 'marca' => 'Eucerin', 'categoria' => 'Cuidado facial', 'precio' => 7200, 'ranking' => 5, 'destacado' => true],
-    ['id' => 6, 'nombre' => 'Gel de Limpieza Facial', 'marca' => 'La Roche-Posay', 'categoria' => 'Dermocosmética', 'precio' => 19800, 'ranking' => 5, 'destacado' => true],
-    ['id' => 7, 'nombre' => 'Crema Corporal Nutritiva', 'marca' => 'Nivea', 'categoria' => 'Cuidado corporal', 'precio' => 9400, 'ranking' => 4, 'destacado' => false],
-    ['id' => 8, 'nombre' => 'Acondicionador Fortalecedor', 'marca' => 'Vichy', 'categoria' => 'Cuidado capilar', 'precio' => 14300, 'ranking' => 4, 'destacado' => false],
-    ['id' => 9, 'nombre' => 'Protector Solar Corporal FPS 50', 'marca' => 'Dermaglós', 'categoria' => 'Protección solar', 'precio' => 17600, 'ranking' => 5, 'destacado' => false],
+    [
+        'id' => 1,
+        'nombre' => 'Protector Solar Facial FPS 50',
+        'marca' => 'Dermaglós',
+        'categoria' => 'Dermocosmética',
+        'precio' => 18900,
+        'ranking' => 5,
+        'destacado' => true,
+        'imagen' => 'protector-solar.png'
+    ],
+    [
+        'id' => 2,
+        'nombre' => 'Agua Micelar',
+        'marca' => 'Garnier',
+        'categoria' => 'Cuidado facial',
+        'precio' => 8500,
+        'ranking' => 4,
+        'destacado' => true,
+        'imagen' => 'agua-micelar.png'
+    ],
+    [
+        'id' => 3,
+        'nombre' => 'Crema Hidratante',
+        'marca' => 'CeraVe',
+        'categoria' => 'Dermocosmética',
+        'precio' => 21500,
+        'ranking' => 5,
+        'destacado' => true,
+        'imagen' => 'crema-hidratante.png'
+    ],
+    [
+        'id' => 4,
+        'nombre' => 'Shampoo Reparación',
+        'marca' => 'Vichy',
+        'categoria' => 'Cuidado capilar',
+        'precio' => 16700,
+        'ranking' => 4,
+        'destacado' => true,
+        'imagen' => 'shampoo.png'
+    ],
+    [
+        'id' => 5,
+        'nombre' => 'Bálsamo Labial',
+        'marca' => 'Eucerin',
+        'categoria' => 'Cuidado facial',
+        'precio' => 7200,
+        'ranking' => 5,
+        'destacado' => true,
+        'imagen' => 'balsamo-labial.png'
+    ],
+    [
+        'id' => 6,
+        'nombre' => 'Gel de Limpieza Facial',
+        'marca' => 'La Roche-Posay',
+        'categoria' => 'Dermocosmética',
+        'precio' => 19800,
+        'ranking' => 5,
+        'destacado' => true,
+        'imagen' => 'gel-limpieza.png'
+    ],
+    [
+        'id' => 7,
+        'nombre' => 'Crema Corporal Nutritiva',
+        'marca' => 'Nivea',
+        'categoria' => 'Cuidado corporal',
+        'precio' => 9400,
+        'ranking' => 4,
+        'destacado' => false,
+        'imagen' => 'crema-corporal.png'
+    ],
+    [
+        'id' => 8,
+        'nombre' => 'Acondicionador Fortalecedor',
+        'marca' => 'Vichy',
+        'categoria' => 'Cuidado capilar',
+        'precio' => 14300,
+        'ranking' => 4,
+        'destacado' => false,
+        'imagen' => 'acondicionador.png'
+    ],
+    [
+        'id' => 9,
+        'nombre' => 'Protector Solar Corporal FPS 50',
+        'marca' => 'Dermaglós',
+        'categoria' => 'Protección solar',
+        'precio' => 17600,
+        'ranking' => 5,
+        'destacado' => false,
+        'imagen' => 'protector-solar-corporal.png'
+    ],
 ];
 
 require_once __DIR__ . '/includes/header.php';
@@ -101,8 +182,11 @@ require_once __DIR__ . '/includes/navbar.php';
                             <article class="producto-card">
 
                                 <div class="producto-imagen">
-                                    <span>Producto</span>
-                                </div>
+    <img
+        src="<?= BASE_URL ?>front/assets/img/<?= htmlspecialchars($producto['imagen']) ?>"
+        alt="<?= htmlspecialchars($producto['nombre']) ?>"
+        class="img-fluid">
+</div>
 
                                 <div class="producto-contenido">
 
